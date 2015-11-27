@@ -55,4 +55,17 @@ project {
             }
         }
     }
+
+    repositories {
+        repository {
+            id 'sonatype.snapshots'
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+            releases {
+                enabled false
+            }
+            snapshots {
+                enabled true
+            }
+        }
+    }
 }
